@@ -1,0 +1,16 @@
+apt install ndctl ipmctl
+ipmctl show -dimm -firmware
+ipmctl show -memoryresources
+ndctl list -DHi
+ndctl init-labels all
+ndctl enable-region all
+ndctl create-region
+ndctl disable-region all -f
+ndctl destroy-namespace all
+#ndctl destroy-namespace namespace0.0 -f
+#ndctl destroy-namespace namespace1.0 -f
+ipmctl create -goal
+ipmctl create -goal PersistentMemoryType=AppDirect
+ndctl create-namespace
+ndctl create-namespace --mode devdax
+ndctl create-namespace --mode raw

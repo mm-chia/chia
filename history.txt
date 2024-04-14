@@ -1,0 +1,659 @@
+    1  sudo su
+    2  clear
+    3  ping google.com
+    4  clar
+    5  clear
+    6  sudo su
+    7  history
+    8  sudo su
+    9  exit
+   10  sudo su
+   11  ping google.com
+   12  sudo su
+   13  ping google.com
+   14  sudo su
+   15  ip a
+   16  ping google.com
+   17  ip a
+   18  ifup bond0
+   19  sudo su
+   20  ping google.com
+   21  sudo su
+   22  ping google.com
+   23  sudo su
+   24  cat /etc/fstab 
+   25  exit
+   26  ssh 192.168.1.33
+   27  ssh 192.168.1.85
+   28  ssh 192.168.1.33
+   29  clear
+   30  sudo su
+   31  ip a
+   32  sudo su
+   33  history
+   34  ssh 192.168.1.33
+   35  exit
+   36  ssh 192.168.1.22
+   37  exit
+   38  cd ../../
+   39  git clone https://github.com/Chia-Network/bladebit.git
+   40  ssh 192.168.1.85
+   41  cd ~/.chia/mainnet/
+   42  scp -r 192.168.1.85:/home/ubuntu/.chia/mainnet/db .
+   43  ls -la /mnt/
+   44  cd ~/.chia/mainnet/
+   45  mv db/ db.old
+   46  df -h
+   47  cd chia-blockchain/
+   48  . ./activate
+   49  bash start-gui.sh &
+   50  sudo su
+   51  cd chia-blockchain/
+   52  . ./activate
+   53  bash start-gui.sh &
+   54  df -h
+   55  cat /etc/fstab 
+   56  ssh 192.168.1.22
+   57  ssh-keygen -f "/home/ubuntu/.ssh/known_hosts" -R "192.168.1.22"
+   58  ssh 192.168.1.22
+   59  sudo su
+   60  cd chia-blockchain/
+   61  . ./activate
+   62  bash start-gui.sh &
+   63  sudo su
+   64  sudo su
+   65  cd chia-blockchain/
+   66  . ./activate
+   67  bash start-gui.sh &
+   68  df -h
+   69  sudo mount -a
+   70  sudo vim /etc/fstab 
+   71  sudo mount -a
+   72  df -h
+   73  cd chia-blockchain/
+   74  . ./activate
+   75  bash start-gui.sh &
+   76  clear
+   77  ls -la /mnt/plot03
+   78  ls -la /mnt/plot03/*.tmp
+   79  cd chia-blockchain/
+   80  . ./activate
+   81  bash start-gui.sh &
+   82  clear
+   83  git status
+   84  git pull
+   85  git log
+   86  clear
+   87  ls -la /mnt/plot*/*.tmp
+   88  rm /mnt/plot*/*.tmp
+   89  ls -la /mnt/plot*/*.tmp
+   90  ls -la /mnt/supermicro-01/plot*/*.tmp
+   91  rm /mnt/supermicro-01/plot*/*.tmp
+   92  clear
+   93  cd ..
+   94  clear
+   95  exit
+   96  df -h
+   97  mount -a
+   98  sudo mount -a
+   99  sudo su
+  100  cd chia-blockchain/
+  101  . ./activate
+  102  bash start-gui.sh &
+  103  ping 192.168.1.17
+  104  sudo su
+  105  ssh 192.168.1.17
+  106  xit
+  107  exit
+  108  cd chia-blockchain/
+  109  . ./activate
+  110  bash start-gui.sh &
+  111  cd chia-blockchain/
+  112  . ./activate
+  113  bash start-gui.sh &
+  114  exit
+  115  wget https://github.com/tcpaddock/shiplot/releases/download/v1.0.0-beta.4/shiplot_1.0.0-beta.4_linux_amd64.tar.gz
+  116  tar -xzvf shiplot_1.0.0-beta.4_linux_amd64.tar.gz 
+  117  mv example.shiplot.yaml shiplot.yaml
+  118  vim shiplot.yaml 
+  119  ./shiplot run
+  120  vim shiplot.yaml 
+  121  ls -la /mnt/plot*/*.tmp
+  122  rm /mnt/plot*/*.tmp
+  123  ./shiplot run
+  124  rm /mnt/plot*/*.tmp
+  125  vim shiplot.yaml 
+  126  ./shiplot run
+  127  rm /mnt/plot*/*.tmp
+  128  vim shiplot.yaml 
+  129  ./shiplot run
+  130  rm /mnt/plot*/*.tmp
+  131  vim shiplot.yaml 
+  132  ./shiplot run
+  133  sudo su
+  134  cd chia-blockchain/
+  135  . ./activate
+  136  bash start-gui.sh &
+  137  sudo su
+  138  cd ..
+  139  exit
+  140  vim shiplot.yaml 
+  141  ./shiplot run
+  142  df -h
+  143  df -h /mnt/plot26
+  144  ls -la /mnt/plot26
+  145  sudo mkfs.btrfs /dev/sdl -f
+  146  sudo vim /etc/fstab 
+  147  sudo hdparm -tT /dev/sdl
+  148  htop
+  149  df -h
+  150  sudo vim /etc/fstab 
+  151  clear
+  152  df -h
+  153  df -h | grep -v supermicro
+  154  df -h | grep -v supermicro | grep plot
+  155  df -h | grep -v supermicro | grep plot | sort
+  156  df -h | grep -v supermicro | grep plot | sort | wc -l
+  157  df -h | grep -v supermicro | grep plot | sort
+  158  df -h | grep -v supermicro | grep plot
+  159  cd ..
+  160  vim shiplot.yaml 
+  161  ./shiplot run
+  162  vim shiplot.yaml 
+  163  ./shiplot run
+  164  vim shiplot.yaml 
+  165  df -h
+  166  mount
+  167  ls -la /mnt/supermicro-01/plot29
+  168  sudo su
+  169  cd chia-blockchain/
+  170  . ./activate
+  171  bash start-gui.sh &
+  172  ping google.com
+  173  sudo su
+  174  df -h
+  175  df -h | grep 28
+  176  ls /mnt/plot28
+  177  cd ..
+  178  clear
+  179  vim shiplot.yaml 
+  180  df -h
+  181  mv /mnt/plot28/plot* /mnt/supermicro-01/plot26/
+  182  df -h
+  183  ls -la /mnt/plot28
+  184  df -h
+  185  dd if=/dev/zero of=/mnt/plot28/zerofile bs=1M
+  186  ls /mnt/plot28
+  187  mount | grep plot27
+  188  mount | grep plot28
+  189  sudo vim /etc/fstab 
+  190  df -h
+  191  cd chia-blockchain/
+  192  . ./activate
+  193  bash start-gui.sh &
+  194  sudo su
+  195  cd chia-blockchain/
+  196  . ./activate
+  197  bash start-gui.sh &
+  198  df -h
+  199  ls -la /mnt/plot*/*.tmp
+  200  ls -la /mnt/supermicro-01/plot*/*.tmp
+  201  df -h
+  202  sudo mount -a
+  203  cat /etc/fstab 
+  204  ping 192.168.1.11
+  205  cd chia-blockchain/
+  206  . ./activate
+  207  bash start-gui.sh &
+  208  df -h
+  209  sudo su
+  210  df -h
+  211  df -h | grep -v supermicro
+  212  df -h | grep -v supermicro | grep plot
+  213  df -h | grep -v supermicro | grep plot | wc -l
+  214  sudo vim /etc/fstab 
+  215  df -h | grep -v supermicro | grep plot25
+  216  df -h | grep -v supermicro | grep plot26
+  217  df -h | grep -v supermicro | grep plot27
+  218  df -h | grep -v supermicro | grep plot28
+  219  sudo vim /etc/fstab 
+  220  sudo mount -a
+  221  df -h | grep -v supermicro | grep plot26
+  222  umount /mnt/plot26
+  223  sudo umount /mnt/plot26
+  224  clear
+  225  sudo su
+  226  cd chia-blockchain/
+  227  df -h
+  228  sudo mount -a
+  229  sudo vim /etc/fstab 
+  230  sudo mount -a
+  231  df -h
+  232  . ./activate
+  233  bash start-gui.sh &
+  234  sudo su
+  235  cd chia-blockchain/
+  236  . ./activate
+  237  bash start-gui.sh &
+  238  sudo su
+  239  clear
+  240  mkdir chia-src
+  241  cd chia-src/
+  242  scp 192.168.1.143:/home/ubuntu/chia-src/chia-blockchain.tar.gz .
+  243  tar -xzvf chia-blockchain.tar.gz 
+  244  cd chia-blockchain/
+  245  cat install-gui.sh 
+  246  ping google.com
+  247  df -h
+  248  sudo su
+  249  cd chia-blockchain/
+  250  . ./activate
+  251  bash start-gui.sh &
+  252  chia stop -d all
+  253  deactivate
+  254  git status
+  255  git pull
+  256  git status
+  257  git fetch
+  258  git reset --hard FETCH_HEAD --recurse-submodules
+  259  git status
+  260  sh install.sh
+  261  . ./activate
+  262  chia init
+  263  cd chia-blockchain-gui
+  264  git fetch
+  265  cd ..
+  266  git status
+  267  ./install-gui.sh
+  268  bash start-gui.sh &
+  269  deactivate
+  270  cd ~/chia-src/chia-blockchain/
+  271  . ./activate
+  272  bash start-gui.sh &
+  273  cd ~/.chia/mainnet/config/
+  274  vim config.yaml
+  275  exit
+  276  df -h
+  277  . ./activate
+  278  df -h
+  279  sudo dmidecode --type memory | grep Size
+  280  sudo su
+  281  exit
+  282  rm /mnt/chia/plot04/plot-k32-2023-04-08-05-56-d624cacb458ce0416f2d3016a13c838f65d442d6414ec37546b47577e2c817c9.plot
+  283  rm /mnt/chia/plot29/plot-k32-2023-04-04-03-43-323289c0abc78d336b3bd82e36ef9c79f43ab5db7933a7d907ea162ec38c1610.plot
+  284  rm /mnt/chia/plot16/plot-k32-2023-04-04-09-39-85ed3340f131f4ed2b5df1edab28cfe6aad37cca5fb875cb7dd4f5f7bc4e470d.plot
+  285  rm /mnt/chia/plot07/plot-k32-2023-04-06-11-56-1b663bf4cb69c11d03ac10a4f15f1280a64fb44151e2f2c46e285cfa8564b3ca.plot
+  286  rm /mnt/chia/plot06/plot-k32-2023-03-30-11-12-20a9fa376864e213885338777783704b93642f756df13ce4992bf46600d1905b.plot
+  287  exit
+  288  df -h
+  289  ping google.com
+  290  df -h
+  291  df -h | grep chia | wc -l
+  292  cat /etc/fstab 
+  293  df -h
+  294  cd chia-src/chia-blockchain/
+  295  . ./activate
+  296  bash start-gui.sh &
+  297  cd chia-src/chia-blockchain/
+  298  . ./activate
+  299  bash start-gui.sh &
+  300  exit
+  301  cat check-chia-plots.sh 
+  302  exit
+  303  cd Downloads/
+  304  ls -la
+  305  dpkg -i chia-blockchain-cli_2.0.0b5-dev76-1_amd64.deb
+  306  sudo dpkg -i chia-blockchain-cli_2.0.0b5-dev76-1_amd64.deb
+  307  sudo dpkg -i chia-blockchain_2.0.0b5-dev76_amd64.deb
+  308  ping google.com
+  309  cd ../../.chia
+  310  cd mainnet/
+  311  cd log/
+  312  ls -la
+  313  vim debug.log 
+  314  cat debug.log | grep File
+  315  rm /mnt/chia/plot28/plot-k32-c07-2023-06-21-10-06-183419c167b9bccfb4800d6ec4503d5da97b3bf619727bc68f8dad5de06a4dd6.plot 
+  316  df -h
+  317  rm debug.log 
+  318  ls
+  319  ls -la
+  320  rm .__debug.lock 
+  321  ls -la
+  322  cat debug.log 
+  323  ls -la
+  324  rm debug.log 
+  325  rm .__debug.lock 
+  326  ls -la
+  327  cat debug.log 
+  328  cd ../../../
+  329  ./delete-chia-bad-plots.sh 
+  330  ls -la logs/
+  331  vim shiplot.yaml 
+  332  ssh 192.168.1.24
+  333  chia plots check -n 5 -g /mnt/chia/plot05/plot-k32-2023-01-31-22-33-7f1fac0d66b45759c25c6cd357a32d8c93e5b586352ff4f1c76d8684e45ebb53.plot 
+  334  cd chia-src/chia-blockchain/
+  335  . ./activate
+  336  chia plots check -n 5 -g /mnt/chia/plot05/plot-k32-2023-01-31-22-33-7f1fac0d66b45759c25c6cd357a32d8c93e5b586352ff4f1c76d8684e45ebb53.plot 
+  337  chia plots check -n 10 -g /mnt/chia/plot05/plot-k32-2023-01-31-22-33-7f1fac0d66b45759c25c6cd357a32d8c93e5b586352ff4f1c76d8684e45ebb53.plot 
+  338  chia plots check -n 30 -g /mnt/chia/plot05/plot-k32-2023-01-31-22-33-7f1fac0d66b45759c25c6cd357a32d8c93e5b586352ff4f1c76d8684e45ebb53.plot 
+  339  cd ../.././.chia/mainnet/log/
+  340  ls -la
+  341  cat debug.log 
+  342  chia plots check -n 30 -g /mnt/chia/plot28/plot-k32-c07-2023-06-22-10-05-70529b42a3d37ce33ddbcbb07fe9f6ab64ec0a8705342a678b73341f5fb00a5c.plot
+  343  chia plots check help
+  344  chia plots check -h
+  345  chia plots check -n 30 -g /mnt/chia/plot28/plot-k32-c07-2023-06-22-10-05-70529b42a3d37ce33ddbcbb07fe9f6ab64ec0a8705342a678b73341f5fb00a5c.plot
+  346  echo $?
+  347  chia plots check -n 30 -g /mnt/chia/plot28/plot-k32-c07-2023-06-22-10-05-70529b42a3d37ce33ddbcbb07fe9f6ab64ec0a8705342a678b73341f5fb00a5c.plot > /tmp/plot_check.txt
+  348  chia plots check -n 30 -g /mnt/chia/plot28/plot-k32-c07-2023-06-22-10-05-70529b42a3d37ce33ddbcbb07fe9f6ab64ec0a8705342a678b73341f5fb00a5c.plot > /tmp/plot_check.txt 2>&1
+  349  cat /tmp/plot_check.txt | grep 'invalid plots'
+  350  cat /tmp/plot_check.txt | grep 'invalid plots found'
+  351  df -h
+  352  cd ../../../
+  353  ls -la logs/
+  354  rm logs/check-2023-07-23_16-*
+  355  clear
+  356  vim check-chia-plots.sh 
+  357  cat /tmp/plot_check.txt 
+  358  chia plots check -n 30 -g mnt/chia/plot05/plot-k32-2023-01-27-14-19-a4fe4ea1d1a3a9becaa22a8498cf4a8d48488d7dc640e5eb5b6bb4057cf59f8c.plot
+  359  chia plots check -n 30 -g /mnt/chia/plot05/plot-k32-2023-01-27-14-19-a4fe4ea1d1a3a9becaa22a8498cf4a8d48488d7dc640e5eb5b6bb4057cf59f8c.plot
+  360  ip a
+  361  clear
+  362  ls -la /mnt/chia/plot26
+  363  vim delete-chia-bad-plots.sh 
+  364  ./delete-chia-bad-plots.sh 
+  365  clear
+  366  ./delete-chia-bad-plots.sh 
+  367  clear
+  368  ls -la /mnt/chia/plot26
+  369  ls -la /mnt/chia/plot28
+  370  ls -la /mnt/chia/plot26
+  371  df -h | grep plot26
+  372  df -h | grep plot28
+  373  df -h
+  374  df -h | grep chia
+  375  df -h | grep chia | cut -d'/' -f6
+  376  df -h | grep chia | cut -d'/' -f6 | sort
+  377  df -h | grep chia | cut -d'/' -f6 | sort | wc -l
+  378  sudo vim /etc/fstab 
+  379  sudo mv /mnt/chia/plot26/ /mnt/chia/pool26
+  380  sudo mv /mnt/chia/plot28/ /mnt/chia/pool28
+  381  sudo vim /etc/fstab 
+  382  cd chia-src/chia-blockchain/
+  383  . ./activate
+  384  bash start-gui.sh &
+  385  history
+  386  ping google.com
+  387  df -h
+  388  ls -la /mnt/chia/
+  389  ls -la /mnt/chia/plot*
+  390  df -h
+  391  df -h | grep pool
+  392  ls -la /mnt/chia/plot01/
+  393  ls -la /mnt/chia/plot02
+  394  ls -la /mnt/chia/plot03
+  395  ls -la /mnt/chia/plot04
+  396  ls -la /mnt/chia/plot05
+  397  ls -la /mnt/chia/plot06
+  398  ls -la /mnt/chia/plot07
+  399  ls -la /mnt/chia/plot08
+  400  ls -la /mnt/chia/plot09
+  401  ls -la /mnt/chia/plot10
+  402  ls -la /mnt/chia/plot11
+  403  ls -la /mnt/chia/plot12
+  404  ls -la /mnt/chia/plot13
+  405  ls -la /mnt/chia/plot14
+  406  ls -la /mnt/chia/plot1
+  407  ls -la /mnt/chia/plot15
+  408  ls -la /mnt/chia/plot16
+  409  ls -la /mnt/chia/plot17
+  410  ls -la /mnt/chia/plot18
+  411  ls -la /mnt/chia/plot19
+  412  ls -la /mnt/chia/plot20
+  413  ls -la /mnt/chia/plot21
+  414  ls -la /mnt/chia/plot22
+  415  ls -la /mnt/chia/plot23
+  416  ls -la /mnt/chia/plot24
+  417  ls -la /mnt/chia/plot25
+  418  ls -la /mnt/chia/plot26
+  419  ls -la /mnt/chia/plot27
+  420  ls -la /mnt/chia/plot28
+  421  ls -la /mnt/chia/plot29
+  422  ls -la /mnt/chia/plot30
+  423  ls -la /mnt/chia/plot31
+  424  ls -la /mnt/chia/plot32
+  425  ls -la /mnt/chia/plot33
+  426  ls -la /mnt/chia/plot34
+  427  ls -la /mnt/chia/plot35
+  428  ls -la /mnt/chia/plot36
+  429  ls -la /mnt/chia/plot37
+  430  ls -la /mnt/chia/plot38
+  431  ls -la /mnt/chia/plot39
+  432  ls -la /mnt/chia/plot40
+  433  ls -la /mnt/chia/plot41
+  434  ls -la /mnt/chia/plot42
+  435  ls -la /mnt/chia/plot43
+  436  ls -la /mnt/chia/plot44
+  437  ls -la /mnt/chia/plot45
+  438  ls -la /mnt/chia/plot46
+  439  ls -la /mnt/chia/plot47
+  440  ls -la /mnt/chia/plot48
+  441  ls -la /mnt/chia/plot49
+  442  ls -la /mnt/chia/plot50
+  443  ls -la /mnt/chia/plot51
+  444  ls -la /mnt/chia/plot52
+  445  ls -la /mnt/chia/plot53
+  446  ls -la /mnt/chia/plot26
+  447  ls -la /mnt/chia/plot28
+  448  ls -la /mnt/chia/plot28 | wc -l
+  449  ls -la /mnt/chia/plot26 | wc -l
+  450  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-11-09-9a345a43e403b18f174f3a07a841c5777fe9895b62578322bde8b484c536587f.plot
+  451  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-17-48-6ed35478fa362fca0fae0b09357e64f1da617b188d1f5a146abbd9d8340b5f07.plot
+  452  rm mnt/chia/plot26/plot-k32-c07-2023-06-21-14-18-797047a81188fbf90b20a18f120646f26d447d30e63c1acf5ebf09d922df77a0.plot
+  453  rm mnt/chia/plot26/plot-k32-c07-2023-06-21-13-06-ea2917d242de36809d3198e4511830f08b693a05dac78f4dc6927ef995706fa4.plot
+  454  rm /mnt/chia/plot26/plot-k32-c07-2023-06-20-15-35-7214d138dd9bfc697351349716ddc03d832959ebfb5ea06e8f53932f0c9df0d0.plot
+  455  rm /mnt/chia/plot28/plot-k32-c07-2023-06-22-11-44-83de84e0da5730a21744e8b3853f53b0dc09545f550af28239b9000947bfe93f.plot
+  456  rm /mnt/chia/plot28/plot-k32-c07-2023-06-22-08-39-c52792a1a1abc9c66bfda7fd465c9ddaecd0073921cfd70ec8a2536206097976.plot
+  457  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-13-18-8c3f5a81eecca529172355e67990e6723cad24c5289ecdf700f04fc48ea16d64.plot
+  458  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-14-10-9738fbfbe9cad35032604a47d8e7e57c9a13b32fecbb6852b0e518b0bd9a8ae6.plot
+  459  rm /mnt/chia/plot28/plot-k32-c07-2023-06-21-17-16-e78e455f9cc932e775634715103b273a6d600f21c800ef9e103f16289944f34a.plot
+  460  rm /mnt/chia/plot26/plot-k32-c07-2023-06-20-15-35-7214d138dd9bfc697351349716ddc03d832959ebfb5ea06e8f53932f0c9df0d0.plot 
+  461  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-10-01-8603facfa3927177cce7eebec59b256af3c22de4a7d98be48010a1360caa7f44.plot
+  462  rm /mnt/chia/plot28/plot-k32-c07-2023-06-20-15-27-505c0e365fd9e7649bb65bc4eb4ebb685512de0a66e83d0c8511a4b3abf8941d.plot
+  463  rm /mnt/chia/plot28/plot-k32-c07-2023-06-22-08-39-c52792a1a1abc9c66bfda7fd465c9ddaecd0073921cfd70ec8a2536206097976.plot
+  464  rm /mnt/chia/plot28/plot-k32-c07-2023-06-21-11-05-180047afd7ad5df9e48d9db45b125591a80cc7e1d95657c3582f18588763e4ca.plot
+  465  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-17-08-e11bbe9ce41e09c67944ac51140c0f7664646b5665c2b1c1be1586f74ec89634.plot
+  466  rm /mnt/chia/plot28/plot-k32-c07-2023-06-21-10-31-154da67fa06ca9edbaf7e4194eaed32d54c09111da1db15774d1579f716c8e6a.plot 
+  467  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-16-07-de2bf2096cfea4e8cd5146d6f67eb867aac0758ea1789513517a3d2e183fbdd7.plot
+  468  rm /mnt/chia/plot28/plot-k32-c07-2023-06-21-11-05-180047afd7ad5df9e48d9db45b125591a80cc7e1d95657c3582f18588763e4ca.plot
+  469  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-11-33-c5e4394ebc22fb97abe44b08dafb3f7e507017167563ddad7801e8d98a260ba6.plot 
+  470  rm /mnt/chia/plot28/plot-k32-c07-2023-06-21-10-23-e1b30daa4e220743050670dc4f5d11c1cfc15d519686457d1ad786ab3d711f8c.plot
+  471  rm /mnt/chia/plot26/plot-k32-c07-2023-06-21-15-55-b32d47162d6a55ec3a9a9224ef2c7be5927b8d571b84edec0c41caac7e7a4f92.plot
+  472  ssh 192.168.1.24
+  473  scp 192.168.1.24:/home/ubuntu/delete-chia-bad-plots.sh .
+  474  vim delete-chia-bad-plots.sh 
+  475  ./delete-chia-bad-plots.sh 
+  476  vim delete-chia-bad-plots.sh 
+  477  rm logs/2023-07-21_20-00-29.log 
+  478  ./delete-chia-bad-plots.sh 
+  479  cd .chia/mainnet/log/
+  480  ls -la
+  481  rm debug.log .__debug.lock 
+  482  ls -la
+  483  rm debug.log 
+  484  rm .__debug.lock 
+  485  clear
+  486  ls -la
+  487  df -h
+  488  ls -la /mnt/chia/
+  489  df -h
+  490  ls -la /mnt/chia/plot05/
+  491  ls -la /mnt/chia/plot26
+  492  ls -la /mnt/chia/plot28
+  493  cd ../../../
+  494  cp delete-chia-bad-plots.sh check-chia-plots.sh
+  495  vim check-chia-plots.sh 
+  496  ./check-chia-plots.sh /mnt/chia/plot05
+  497  clear
+  498  ./check-chia-plots.sh /mnt/chia/plot05
+  499  vim check-chia-plots.sh 
+  500  ./check-chia-plots.sh /mnt/chia/plot05
+  501  vim check-chia-plots.sh 
+  502  ./check-chia-plots.sh /mnt/chia/plot05
+  503  vim check-chia-plots.sh 
+  504  ./check-chia-plots.sh /mnt/chia/plot05
+  505  vim check-chia-plots.sh 
+  506  ./check-chia-plots.sh /mnt/chia/plot05
+  507  df -h
+  508  df -h | grep 28
+  509  vim check-chia-plots.sh 
+  510  ./check-chia-plots.sh 
+  511  vim check-chia-plots.sh 
+  512  ./check-chia-plots.sh 
+  513  vim check-chia-plots.sh 
+  514  ./check-chia-plots.sh /mnt/chia/plot05
+  515  vim check-chia-plots.sh 
+  516  ./check-chia-plots.sh /mnt/chia/plot05
+  517  vim logs/cg
+  518  vim logs/check-2023-07-23_16-48-30.log 
+  519  ls -la /mnt/chia/plot05/
+  520  df -h
+  521  vim check-chia-plots.sh 
+  522  vim delete-chia-bad-plots.sh 
+  523  ./delete-chia-bad-plots.sh 
+  524  ls -la 
+  525  ls -la /mnt/chia/plot26/plot-k32-c07-2023-06-21-15-19-7b7b0d1a66e26d9a5f2f425dd52b0919a997ad8a12743b94ab3bd22256ce580a.plot
+  526  vim delete-chia-bad-plots.sh 
+  527  ./delete-chia-bad-plots.sh 
+  528  ls -la /mnt/chia/plot26
+  529  ls -la /mnt/chia/plot28
+  530  ./check-chia-plots.sh /mnt/chia/plot26
+  531  cd chia-src/chia-blockchain/
+  532  . ./activate
+  533  cd -
+  534  ./check-chia-plots.sh /mnt/chia/plot26
+  535  vim check-chia-plots.sh 
+  536  clear
+  537  ./check-chia-plots.sh /mnt/chia/plot26
+  538  vim check-chia-plots.sh 
+  539  ./check-chia-plots.sh /mnt/chia/plot26
+  540  sudo umount /mnt/chia/plot26
+  541  sudo umount /mnt/chia/plot28
+  542  ./check-chia-plots.sh /mnt/chia/pool26
+  543  ls -la /mnt/chia/pool26/
+  544  ls -la /mnt/chia/pool26/ | wc -l
+  545  ls -la /mnt/chia/pool28/ | wc -l
+  546  df -h
+  547  df -h | grep chia
+  548  df -h | grep chia | wc -l
+  549  clear
+  550  vim delete-chia-bad-plots.sh 
+  551  ./delete-chia-bad-plots.sh 
+  552  df -h
+  553  vim delete-chia-bad-plots.sh 
+  554  ./delete-chia-bad-plots.sh 
+  555  vim delete-chia-bad-plots.sh 
+  556  cat delete-chia-bad-plots.sh 
+  557  chia_log_file=/home/ubuntu/.chia/mainnet/log/debug.log
+  558  bad_files=$(cat $chia_log_file | grep "File: /" | cut -d' ' -f9 | grep chia | grep plot)
+  559  echo $bad_files
+  560  cat $chia_log_file | grep "File: /" | cut -d' ' -f9
+  561  cat $chia_log_file | grep "File: /"
+  562  cat $chia_log_file
+  563  df -h
+  564  ./delete-chia-bad-plots.sh 
+  565  df -h
+  566  ./delete-chia-bad-plots.sh 
+  567  vim delete-chia-bad-plots.sh 
+  568  ./delete-chia-bad-plots.sh 
+  569  df -h
+  570  ls -la /mnt/chia/pool26
+  571  ip a
+  572  ping google.com
+  573  ip a
+  574  df -h
+  575  ./delete-chia-bad-plots.sh 
+  576  df -h
+  577  ls -la /mnt/chia/
+  578  ls -la /mnt/chia/plot*
+  579  ls -la /mnt/chia/plot0*
+  580  ls -la /mnt/chia/pool2*
+  581  df -h
+  582  df -h | grep pool
+  583  lspci
+  584  lspci | grep -i lsi
+  585  df -h
+  586  lspci | grep -i nvidia
+  587  cd Downloads/
+  588  ls -la
+  589  dpkg -i chia-blockchain_2.0.0_amd64.deb 
+  590  sudo dpkg -i chia-blockchain_2.0.0_amd64.deb 
+  591  sudo dpkg -i chia-blockchain-cli_2.0.0-1_amd64.deb 
+  592  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
+  593  sudo dpkg -i cuda-keyring_1.0-1_all.deb
+  594  sudo apt-key del 7fa2af80
+  595  sudo apt-get update
+  596  sudo apt-get -y install cuda nvidia-driver-535
+  597  sudo apt install cmake libnuma-dev
+  598  sudo apt update
+  599  sudo apt upgrade -y && shutdown -h now
+  600  ./check-chia-plots.sh /mnt/chia/pool26
+  601  ls -la /mnt/chia/
+  602  sudo lspci
+  603  sudo lspci | grep -i lsi
+  604  sudo lspci | grep -i avago
+  605  ping google.com
+  606  ls -la 
+  607  git clone 
+  608  git clone https://github.com/thomaslovell/LSIUtil.git
+  609  cd LSIUtil/
+  610  cd bin
+  611  cd Binaries/
+  612  ls -la
+  613  cd LSIutil_1.71_binaries/
+  614  ls -la
+  615  cd Linux/
+  616  ls -la
+  617  chmod +x lsiutil.x86_64 
+  618  ./lsiutil.x86_64 -s
+  619  sudo apt install mpt-status
+  620  ./lsiutil.x86_64 -s
+  621  modprobe mptctl
+  622  sudo modprobe mptctl
+  623  sudo ./lsiutil.x86_64 -s
+  624  sudo ./lsiutil.x86_64 -p 1 -e
+  625  sudo fdisk -l
+  626  reboot
+  627  ssh 192.168.99.116
+  628  scp 192.168.99.116:/home/ubuntu/*.sh .
+  629  ls -la /mnt/
+  630  ./plot.sh /mnt/chia
+  631  vim plot.sh 
+  632  ./plot.sh /mnt/chia
+  633  clear
+  634  ls -la
+  635  cd bladebit/
+  636  ls -la
+  637  git status
+  638  git pull
+  639  vim cuda/CudaPlotConfig.h 
+  640  git status
+  641  ls -la
+  642  mkdir -p build-release
+  643  cd build-release
+  644  cmake .. -DCMAKE_BUILD_TYPE=Release
+  645  cmake --build . --target clean --config Release
+  646  cmake --build . --target bladebit_cuda --config Release -j$(nproc --all)
+  647  cd ../../
+  648  sudo vim /etc/fstab 
+  649  sudo lspci | grep -i sas
+  650  sudo fdisk -l
+  651  ls -la
+  652  cd LSIutil_1.71_binaries/
+  653  history
+  654  cd LSIUtil/Binaries/LSIutil_1.71_binaries/Linux/
+  655  ls -la
+  656  ./lsiutil.x86_64 -s
+  657  sudo ./lsiutil.x86_64 -s
+  658  cd ~
+  659  history > history.txt

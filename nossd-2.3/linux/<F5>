@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$(realpath "${BASH_SOURCE[0]:-$0}")")"
+
+./client -d /mnt/ramdisk0 --no-temp --no-mining -no-stop -c 15 -g,100M

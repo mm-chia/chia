@@ -1,0 +1,102 @@
+pwd
+/home/ubuntu/chia-blockchain
+
+
+    1  cd Downloads/
+    2  ls -la
+    3  tar -xz blockchain_v2_mainnet.2023-03-04.sqlite.gz
+    4  tar -xzvf blockchain_v2_mainnet.2023-03-04.sqlite.gz
+    5  gzip -d blockchain_v2_mainnet.2023-03-04.sqlite.gz 
+    6  chia start all
+    7  clear
+    8  cd ~
+    9  git clone o module named 'chia.wallet.vc_wallet.vc_puzzles'
+   10  git clone https://github.com/Chia-Network/chia-blockchain.git
+   11  cd chia-blockchain/
+   12  clear
+   13  ls -la
+   14  ./install-gui.sh 
+   15  . ./activate
+   16  cd ..
+   17  rm -rf chia-blockchain/
+   18  git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
+   19  cd chia-blockchain
+   20  sh install.sh
+   21  . ./activate
+   22  sh install-gui.sh
+   23  sh start-gui.sh 
+   24  git status
+   25  git checkout main
+   26  git status
+   27  git pull
+   28  chia stop -d all
+   29  chia init --fix-ssl-permissions
+   30  chia stop -d all
+   31  deactivate
+   32  git fetch
+   33  git reset --hard FETCH_HEAD --recurse-submodules
+   34  git status
+   35  sh install.sh
+   36  . ./activate
+   37  chia init
+   38  cd chia-blockchain-gui
+   39  git fetch
+   40  cd ..
+   41  chmod +x ./install-gui.sh
+   42  ./install-gui.sh
+   43  bash start-gui.sh &
+   44  git checkout fc.compression_cuda
+   45  . ./activate
+   46  chia stop -d all
+   47  deactivate
+   48  git fetch
+   49  git status
+   50  git reset --hard FETCH_HEAD --recurse-submodules
+   51  sh install.sh
+   52  chia init
+   53  . ./activate
+   54  sh install.sh
+   55  chia init
+   56  chia init --fix-ssl-permissions
+   57  cd chia-blockchain-gui
+   58  git fetch
+   59  cd ..
+   60  chmod +x ./install-gui.sh
+   61  ./install-gui.sh
+   62  bash start-gui.sh &
+   63  git status
+   64  git checkout fc.compression
+   65  ls -la
+   66  chia stop -d all
+   67  deactivate
+   68  git fetch
+   69  git status
+   70  rm -rf chia-blockchain-gui/
+   71  git reset --hard FETCH_HEAD --recurse-submodules
+   72  git status
+   73  ls -la chia-blockchain-gui/
+   74  sh install.sh
+   75  . ./activate
+   76  chia init
+   77  cd chia-blockchain-gui
+   78  git fetch
+   79  cd ..
+   80  chmod +x ./install-gui.sh
+   81  ./install-gui.sh
+   82  bash start-gui.s
+   83  bash start-gui.sh
+   84  chia keys show
+   85  pwd
+   86  history
+
+
+./plot1.sh /mnt/ramdisk0
+./shiplot run
+
+
+# start-chia-gui
+cd chia-blockchain/
+. ./activate
+bash start-gui.sh &
+
+

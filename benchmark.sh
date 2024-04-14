@@ -1,0 +1,3 @@
+#./bladebit_cuda -f aedf4c3dbd789a35084b7e64416b113ad7c8842acb3cdd80a2f66bde35ac3e0ec6e32d82e40a48bfed8910f34fe2aed5 -c xch19rced59sy2f53k0heg0zvhftx76vnfpvx8zenvkla86c2ak2jwaseneuw7 -n 1 --benchmark cudaplot /mnt/ramdisk0
+
+./bladebit_cuda -f aedf4c3dbd789a35084b7e64416b113ad7c8842acb3cdd80a2f66bde35ac3e0ec6e32d82e40a48bfed8910f34fe2aed5 -c xch19rced59sy2f53k0heg0zvhftx76vnfpvx8zenvkla86c2ak2jwaseneuw7 -n 1 --benchmark --compress 7 cudaplot /mnt/ramdisk0

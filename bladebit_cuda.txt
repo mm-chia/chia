@@ -1,0 +1,30 @@
+# install helper software
+sudo apt install git vim terminator firefox gparted btrfs-progs
+
+# install shiplot
+wget https://github.com/tcpaddock/shiplot/releases/download/v1.0.0-beta.4/shiplot_1.0.0-beta.4_linux_amd64.tar.gz
+tar -xzvf shiplot_1.0.0-beta.4_linux_amd64.tar.gz
+mv example.shiplot.yaml shiplot.yaml
+# then modify shiplot.yaml 
+
+# Install nvidia cuda
+sudo apt-get install linux-headers-$(uname -r)
+sudo apt-key del 7fa2af80
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt update
+sudo apt install cuda cuda-toolkit nvidia-gds
+
+# compile bladebit with cuda
+sudo apt install -y build-essential cmake libgmp-dev libnuma-dev
+git clone https://github.com/Chia-Network/bladebit.git -b cuda-compression
+cd bladebit/
+
+modify: "cuda/CudaPlotConfig.h"
+  -#define BBCU_BUCKET_COUNT               (128u)
+  +#define BBCU_BUCKET_COUNT               (256u)
+
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . --target clean --config Release
+cmake --build . --target bladebit_cuda --config Release -j$(nproc --all)

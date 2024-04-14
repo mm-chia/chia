@@ -1,0 +1,100 @@
+
+Usage
+  ./client -d <path> [-d <path>] [-a <address>] [other options]
+
+Main options:
+  -a <address>    chia address for reward, can be omitted to disable mining
+  -d <path>       directory where plots and temporary files will be stored (required),
+                  optionally includes size, plot count and file type limitations
+                    -d[,<size>][,<count>N][,[~]<types>][,r] <path>
+                  where <size> should be specified with one of the following suffixes:
+                    B, KB, MB, GB, TB (bytes, kibibytes, mebibytes, etc)
+                  <types> is a set of letters defining file types that are allowed
+                  or disallowed (if ~ is used) in this directory:
+                    t - temporary files
+                    p - plots
+                  [,r] - to define read-only directory for mining only
+                  option -d can be used multiple times:
+                    -d,t <path1> -d,4TB <path2> -d,1TB,p <path3> -d,r <path4>
+  -c <level>      compression level (10-15) for new plots (default is 10)
+  -m <size>       amount of RAM to use during plotting or finalization
+  -w <name>       worker name displayed on the website
+  -v, -vv. -vvv   enable verbose program output
+  -s <path>       directory to store profile and settings
+                  specify current directory "." to make client portable
+                  you can run the client from readonly or nonpersistent file system
+                  but profile should always be located in
+                  a writable persistent directory
+                  (default is $XDG_CONFIG_HOME/NoSSDChiaPool)
+  -g <gpu_card_index> or <gpu_card_name>
+                  set mining GPU
+  -x <gpu_card_index> or <gpu_card_name>
+                  set plotting GPU
+                  <gpu_card_name> can be any part of a name or a serial number,
+                  optionally includes memory size limit,
+                    -g[,<size>] <name>
+                  where <size> can be specified with one of the following suffixes:
+                    KB, MB, GB, TB (kibibytes, mebibytes, etc)
+                  option -x can only be used once, -g can be used multiple times:
+                    -g,5G 2080 -g,8G 3070 -x 4090
+  --no-mining
+                  disable mining, has the same effect as omitting -a option
+  --no-plotting
+                  do not make new plots
+  --no-gpu-mining
+                  disable GPU mining
+  --no-gpu-plotting
+                  disable GPU plotting
+  --no-stop
+                  do not stop plotter when run out of space
+                  and continue plotting as soon as empty space freed up
+
+Maintenance and benchmark:
+  --check-plots
+                  test all plots for errors on startup
+  --no-benchmark
+                  do not run benchmark on startup
+  --emulate-filter <256 or 128 or 64 or 32>
+                  emulate smaller plot filter to test performance,
+                  this option also change benchmark estimations
+
+Fine performance tuning:
+  --no-temp
+                  do not use temp files, this mode requires 104-120 GB RAM 
+  --no-rescan
+                  do not scan directories for new plots after startup
+  --rescan-interval <seconds>
+                  set interval between directories scanning to this value
+  --low-priority
+                  lower mining threads priority
+  --p-threads <count>
+                  number of plotting and finalization threads
+  --m-threads <count>
+                  number of mining threads
+  --r-threads <count>
+                  number of read threads, increase it for a high latency storage
+
+Network protocol and updates:
+  -u <policy>     automatic update policy:
+                    0 - turn automatic updates off
+                    1 - critical updates only (protocol changes, etc)
+                    2 - security updates
+                    3 - performance improvements
+                    4 - any new version (default)
+  -4 -6           use IPv4 or IPv6 (by default both are used)
+  --no-ntp
+                  do not check system clock
+
+Delegated plotting:
+  -p [password]   password used for delegated plotting
+                  if "-p" is specified without password,
+                  it will be asked at program startup
+  -k <publickey>  public key used for delegated plotting
+                  new plots will be generated for this public key
+  --skip-test
+                  embed secret keys into plots with public keys without testing
+
+Example:
+  ./client -d,1TB /mnt/plot_storage1 -d /mnt/plot_storage2 -a xch1...ejh
+  ./client -d,t /tmp -d,~t /mnt/plot_storage -a xch1...ejh
+
