@@ -1,5 +1,7 @@
 #!/bin/env bash
 
+sudo pip3 install requests
+
 gigahorse_release=$(python3 gigahorse-release.py)
 gigahorse_release=${gigahorse_release:1}
 echo "Gigahorse release: $gigahorse_release"
