@@ -101,3 +101,15 @@ Max Farm Size @256: 0.513081 PiB (physical)
 Max Farm Size @128: 0.256541 PiB (physical)
 Average time to compute quality: 0.175157 sec
 Maximum time to compute full proof: 0 sec
+
+# INNO3D RTX 4070 TI C30
+Total success:  1036 / 1000, 103.6 %
+Total failures: 0 / 1000, 0 %
+Total filtered: 1036 / 1036, 100 %
+Partial Difficulty: 20000 (0.00277851 % chance)
+Max Farm Size @512: 1.93485 PiB (physical)
+Max Farm Size @256: 0.967425 PiB (physical)
+Max Farm Size @128: 0.483713 PiB (physical)
+Average time to compute quality: 0.0929363 sec
+Maximum time to compute full proof: 0 sec
+
