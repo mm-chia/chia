@@ -102,6 +102,17 @@ Max Farm Size @128: 0.256541 PiB (physical)
 Average time to compute quality: 0.175157 sec
 Maximum time to compute full proof: 0 sec
 
+# ASUS RTX 4070 SUPER C30
+Total success:  984 / 1000, 98.4 %
+Total failures: 0 / 1000, 0 %
+Total filtered: 984 / 984, 100 %
+Partial Difficulty: 20000 (0.00277851 % chance)
+Max Farm Size @512: 1.82579 PiB (physical)
+Max Farm Size @256: 0.912896 PiB (physical)
+Max Farm Size @128: 0.456448 PiB (physical)
+Average time to compute quality: 0.0984665 sec
+Maximum time to compute full proof: 0 sec
+
 # INNO3D RTX 4070 TI C30
 Total success:  1036 / 1000, 103.6 %
 Total failures: 0 / 1000, 0 %

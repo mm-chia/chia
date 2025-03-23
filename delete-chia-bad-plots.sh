@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-set -e
+set -xe
 
 log_folder=/home/ubuntu/logs/
 log_file_name=$(date +'%Y-%m-%d_%H-%M-%S').log
@@ -13,7 +13,7 @@ bad_files=$(cat $chia_log_file | grep --text "File: /" | cut -d' ' -f9 | grep ch
 for bad_file in ${bad_files[@]}; do
     if [ -f $bad_file ]; then
         echo "WARN: Deleting bad file '$bad_file'!"
-        rm -f "$bad_file"
+        #rm -f "$bad_file"
     else
         echo "INFO: Skipping bad file '$bad_file' as it does not exist .."
     fi
